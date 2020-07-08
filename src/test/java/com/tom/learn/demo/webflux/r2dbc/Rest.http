@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/product/ HTTP/1.1
+
+###
+GET http://localhost:8080/api/product/3 HTTP/1.1
+
+###
+
+POST http://localhost:8080/api/product/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "Iphone XS Max",
+    "completed": true
+}
+
+###
+PUT http://localhost:8080/product/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "description": "Iphone X",
+    "completed": false
+}
+
+###
+DELETE  http://localhost:8080/api/product/1 HTTP/1.1
+
+
